@@ -11,7 +11,7 @@ def getPercentile():
     rank = int(rankField.get())
 
     # variable to store the result upto 3
-    # decimal points
+
     result = round((students - rank) / students * 100, 3);
 
     # insert method inserting the
@@ -19,8 +19,6 @@ def getPercentile():
     percentileField.insert(10, str(result))
 
 
-# Function for clearing the
-# contents of all text entry boxes
 def Clear():
     # deleting the content from the entry box
     rankField.delete(0, END)
